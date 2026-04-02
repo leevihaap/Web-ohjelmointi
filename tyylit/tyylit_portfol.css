@@ -1,0 +1,102 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(73, 167, 255);
+    color: white;
+}
+
+.header h1{
+    font-size: 48px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.note {
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Navigointipalkki */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: rgb(97, 97, 97);
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(16, 16, 16);
+}
+
+.navbar a.active {
+    background-color: black;
+    color: #ddd;
+}
+
+/* Taulukko */
+
+.month-header {
+  background-color: darkcyan;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-container {
+  width: 50%;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+table {
+  width: 200px;        
+  margin: 0;           
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #090909;
+  padding: 7px;
+  text-align: center;
+}
+
+th {
+  background-color: #c4c4c4;
+}
+
+td:first-child {
+  background-color: #c4c4c4;
+  font-weight: bold;
+}
