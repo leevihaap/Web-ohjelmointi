@@ -8,69 +8,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementtejä</title>
-    <link rel="stylesheet" href="../tyylit/tyylit_t5.css">
+    <link rel="stylesheet" href="../tyylit/tyylit_portfol.css">
 </head>
 <body>
+
+<!-- Navigointipalkki -->
+<div class="navbar">
+    <a href="/index.html">
+        Portfolion etusivu</a>
+    <a href="pages/elementteja.html" class="active">
+        Elementtejä</a>
+    <a href="pages/muotoiluja.html">
+        Muotoiluja</a>
+    <a href="pages/Tyylisivuista.html">
+        Tyylisivut</a>
+</div>
+
+<!-- Header -->
+<div class="header">
     <h1>HTML-elementtejä</h1>
-    <h2>Otsikot</h2>
-    <p>HTML:ssä on otsikkoelementit h1-h6.</p>
+</div>
 
-    <h2>Listat</h2>
-    <p>HTML:ssä on kahden tyyppisiä listoja, numeroituja ja numeroimattomia:</p>
+<!-- Pääsisältö  -->
+<div class="row">
+    <div class="main">
+        <h2>Otsikot</h2>
+            <p>HTML:ssä on otsikkoelementit h1-h6.</p>
 
-    <ol>
-        <li>Ensimmäinen listan kohta.</li>
-        <li>Toinen lista kohta.</li>
-    </ol>
+        <h2>Listat</h2>
+            <p>HTML:ssä on kahden tyyppisiä listoja, numeroituja ja numeroimattomia:</p>
 
-    <p>Numeroimaton lista:</p>
+        <ol>
+            <li>Ensimmäinen listan kohta.</li>
+            <li>Toinen lista kohta.</li>
+        </ol>
 
-    <ul>
-        <li>Ensimmäinen listan kohta.</li>
-        <li>Toinen listan kohta.</li>
-    </ul>
-    
-    <h2>Taulukot</h2>
+                <p>Numeroimaton lista:</p>
 
-    <table>
-        <tr>
-            <th>Otsikko 1</th>
-            <th>Otsikko 2</th>
-        </tr>
-        <tr>
-            <td>Kenttä 1</td>
-            <td>Kenttä 2</td>
-        </tr>
-        <tr>
-            <td>Kenttä 1</td>
-            <td>Kenttä 2</td>
-        </tr>
-    </table>
-    
-    <h2>Linkit</h2>
+        <ul>
+            <li>Ensimmäinen listan kohta.</li>
+            <li>Toinen listan kohta.</li>
+        </ul>
 
-    <p>Linkki ulkoiselle sivulle (samaa ikkunaan / välilehteen):</p>
-    <a href="https://www.seamk.fi/">SeAMKin etusivu</a>
+            <h2>Taulukot</h2>
 
-    <p>Linkki ulkoiselle sivulle (uuteen ikkunaan / välilehteen):</p>
-    <a href="https://www.seamk.fi/" target="_blank">SeAMKin etusivu</a>
+        <table>
+            <tr>
+                <th>Otsikko 1</th>
+                <th>Otsikko 2</th>
+            </tr>
+            <tr>
+                <td>Kenttä 1</td>
+                <td>Kenttä 2</td>
+            </tr>
+            <tr>
+                <td>Kenttä 1</td>
+                <td>Kenttä 2</td>
+            </tr>
+        </table>
 
-    <p>Linkki ulkoiselle sivulle (samaan ikkunaan / välilehteen):</p>
-    <a href="../index.html">Portfolion etusivu</a>
+            <h2>Linkit</h2>
 
-    <h2>Kuvat</h2>
-    <img src="https://rkkauppi.github.io/KL00CT67/tehtavat/multimedia/kuva.gif" width="340" height="260">
+        <p>Linkki ulkoiselle sivulle (samaa ikkunaan / välilehteen):</p>
+        <a href="https://www.seamk.fi/">SeAMKin etusivu</a>
 
-    <h2>Videot</h2>
+        <p>Linkki ulkoiselle sivulle (uuteen ikkunaan / välilehteen):</p>
+        <a href="https://www.seamk.fi/" target="_blank">SeAMKin etusivu</a>
 
-    <p>
-    Esimerkkivideo osoitteesta
-    <a href="https://rkkauppi.github.io/KL00CT67/tehtavat/multimedia/video.mp4" target="_blank">https://file-example.com</a>
-    </p>
+        <h2>Kuvat</h2>
+        <img src="https://rkkauppi.github.io/KL00CT67/tehtavat/multimedia/kuva.gif" width="340" height="260">
 
-    <video width="340" height="260" controls>
-        <source src="https://rkkauppi.github.io/KL00CT67/tehtavat/multimedia/video.mp4" type="video/mp4">
-    </video>
+        <h2>Videot</h2>
+
+        <p>
+        Esimerkkivideo osoitteesta
+        <a href="https://rkkauppi.github.io/KL00CT67/tehtavat/multimedia/video.mp4" target="_blank">https://file-example.com</a>
+        </p>
+
+        <video width="340" height="260" controls>
+            <source src="https://rkkauppi.github.io/KL00CT67/tehtavat/multimedia/video.mp4" type="video/mp4">
+        </video>
+
+    </div>
+</div>
+
+<!-- Footer -->
+ <div class="footer">
+    <p class="note">Web-ohjelmoinnin perusteet</p>
+ </div>
     
 </body>
 </html>
