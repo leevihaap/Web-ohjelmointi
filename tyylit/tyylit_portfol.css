@@ -3,10 +3,78 @@ body {
     margin: 0;
 }
 
+/* Dark mode*/
+.dark-mode {
+    background-color: #323232;
+    color: white;
+}
+
+
+.dark-mode .footer {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.dark-mode .main {
+    background-color: #323232;
+}
+
+.dark-mode .navbar {
+    background-color: #323232;
+}
+
+.dark-mode .navbar a {
+    color: white;
+}
+
+.dark-mode .navbar a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .navbar a.active {
+    background-color: lightseagreen;
+    color: #ddd;
+}
+
+/* Dark mode nappi */
+.darkmode-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1002;
+}
+
+.dark-mode #darkModeToggle {
+    background: white;
+    color: rgb(32, 32, 32);
+}
+
+#darkModeToggle:hover {
+    background: #444;
+}
+
+/* Sivusto */
+
 .header {
     padding: 60px;
     text-align: center;
-    background: rgb(73, 167, 255);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../media/tausta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 
@@ -39,6 +107,51 @@ body {
     padding: 20px;
 }
 
+/* Kuva kollaasi */
+.photo-section {
+    background-color: #9a1f1f;
+    padding: 25px;
+    border-radius: 16px;
+    color: white;
+    margin-top: 30px;
+}
+
+.photo-section h3 {
+    margin-top: 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-card {
+    background: #f7f7f7;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 860px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Navigointipalkki */
 .navbar {
     display: flex;
@@ -60,7 +173,7 @@ body {
 }
 
 .navbar a.active {
-    background-color: black;
+    background-color: lightseagreen;
     color: #ddd;
 }
 
@@ -99,4 +212,26 @@ th {
 td:first-child {
   background-color: #c4c4c4;
   font-weight: bold;
+}
+
+/* Dark mode taulukko */
+.dark-mode th, .dark-mode td {
+  border-color: #666;
+}
+
+.dark-mode th {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode td {
+  color: white;
+}
+
+.dark-mode td:first-child {
+  background-color: #555;
+}
+
+.dark-mode .month-header {
+  background-color: #006666;
 }
