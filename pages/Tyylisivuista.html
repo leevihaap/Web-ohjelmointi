@@ -1,23 +1,57 @@
-<!-- 
-  Tehtävä 6
--->
 
 <!DOCTYPE html>
     <title>Tyylisivuista</title>
-    <link rel="stylesheet" href="../tyylit/tyylit_t6.css">
+    <link rel="stylesheet" href="../tyylit/tyylit_portfol.css">
 
+    <!-- ylä navigointi-->
     <style>
     @media screen and (max-width: 800px) {
       .row, .navbar {
         flex-direction: column;
       }
     }
+    body {
+      padding-top: 40px;
+    }
+    .top-navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1001;
+    }
+    .dark-mode .top-navbar {
+      background-color: #323232;
+    }
+    .dark-mode .top-navbar a {
+      color: white;
+    }
+    .dark-mode .top-navbar a:hover {
+      background-color: #323232;
+      color: white;
+    }
+    .dark-mode .top-navbar a.active {
+      background-color: lightseagreen;
+      color: white;
+    }
     </style>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
+
+<!-- Ylä navigointipalkki -->
+<div class="navbar top-navbar">
+    <a href="../index.html">
+        Portfolion etusivu</a>
+    <a href="elementteja.html">
+        Elementtejä</a>
+    <a href="muotoiluja.html">
+        Muotoiluja</a>
+    <a href="Tyylisivuista.html" class="active">
+        Tyylisivu</a>
+</div>
 
 <!-- Header -->
 <div class="header">
@@ -25,12 +59,16 @@
   <p class="note">Tyylitiedostoista lyhyesti</p>
 </div>
 
-<!-- Navigaatiopalkki -->
+<!-- toinen navigaatiopalkki -->
 <div class="navbar">
     <a href="https://www.w3schools.com/html/default.asp">
         Lisää HTML:stä (W3Schools)</a>
-    <a href="https://www.w3schools.com/css/default.asp">
+    <a href="https://www.w3schools.com/css/default.asp" target="_balnk">
         Lisää CSS:stä (W3Schools)</a>
+</div>
+
+<div class="darkmode-container">
+    <button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button>
 </div>
 
 <!-- Pääsisältö  -->
@@ -47,7 +85,7 @@
   </div>
 
   <div class="side">
-    <p>CSS = Cascading Style Sheets</p>
+    <p></p>
   </div>
 </div>
 
@@ -56,5 +94,5 @@
   <p class="note">Web-ohjelmoinnin perusteet</p>
 </div>
 
-
-</body></html>
+</body>
+</html>
